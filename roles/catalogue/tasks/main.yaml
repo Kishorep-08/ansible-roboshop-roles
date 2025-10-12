@@ -8,6 +8,11 @@
     name: common
     tasks_from: nodejs.yaml
 
+- name: copy mongo repo
+  ansible.builtin.copy:
+    src: mongo.repo
+    dest: /etc/yum.repos.d/mongo.repo
+    
 - name: installing mongodb client
   ansible.builtin.package:
     name: mongodb-mongosh
@@ -29,5 +34,5 @@
   ansible.builtin.import_role:
     name: common
     tasks_from: systemd.yaml
-    
+
 
