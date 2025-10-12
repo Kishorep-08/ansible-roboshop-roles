@@ -1,2 +1,4 @@
 MONGODB_HOST: mongodb.kishore-p.space
 REDIS_HOST: redis.kishore-p.space
+CATALOGUE_HOST: catalogue.kishore-p.space
+USER_HOST: user.kishore-p.space
